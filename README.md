@@ -41,7 +41,7 @@ Status badges for CI.yml
 ## Key Functions
 
 **Building Schedule**
-This designed Flask app helps to build schedule for target consumer according to their daily tasks and to-dos. The consumer will input their daily tasks in the command line. 
+This designed Flask app helps to build schedule for target consumer according to their daily tasks and to-dos. The consumer will input their daily tasks in the command line. These tasks will then be organized into a designed daily schedule that helps them organize their to-dos. 
 
 ## Preparation
 **1. Establish a Databricks Workspace:**
