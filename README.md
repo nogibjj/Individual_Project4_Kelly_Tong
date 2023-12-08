@@ -3,14 +3,10 @@
 This repository is for IDS706 Individual Project 4: Auto Scaling Flask App Using Any Serverless Platform
 
 ## Video Demo
-Video Demo can be found in : [individual project 3 demo video youtube](https://youtu.be/WgbmADD6vBk)
+Video Demo can be found in : [individual project 4 demo video youtube]()
 
 ## Purpose 
-This repository includes the python code for creating a Data Processing Pipeline that can operate in Databricks. 
-This pipeline includes functions in extracting, transforming and loading, as well as a query fuction that generate a visualization.
-This entire repository can be clone in Databricks to perform job run and editing in workspace. 
-Both python libraries and Databricks are used to facilitate efficient data processing and analysis job. 
-More building process and query results are included in sectons below. 
+
     
 ## Important Things included are:
 - ``.devcontainer`` includes a Dockerfile and devcontainer.json.
