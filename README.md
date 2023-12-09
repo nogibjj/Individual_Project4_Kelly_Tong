@@ -1,4 +1,4 @@
-# IDS 706 Individual Project 4: Auto Scaling Flask App Using Any Serverless Platform
+## IDS 706 Individual Project 4: Auto Scaling Flask App Using Any Serverless Platform
 
 This repository is for IDS706 Individual Project 4: Auto Scaling Flask App Using Any Serverless Platform
 
