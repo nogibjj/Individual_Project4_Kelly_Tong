@@ -73,13 +73,13 @@ Status badges for CI.yml
 
 ## App Usage
 1. Click plan your day
-2. Input the daily to-dos
-   
-<img width="1400" alt="截屏2023-12-09 21 12 28" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/94ac597d-ac44-4cfc-bf30-ea24928429b0">
+2. Input the daily to-dos with desired listen spotify song
+<img width="1525" alt="截屏2023-12-10 18 02 07" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/38f19fc6-8145-4a98-b6a3-e337de86d98e">
 
 3. Click Generate Schedule
 4. A Planned schedule will be shown
-<img width="1222" alt="截屏2023-12-09 21 12 36" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/591d5fea-9cac-4b98-a344-2c25560bbc2c">
+
+<img width="1067" alt="截屏2023-12-10 18 05 41" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/14863984-9a88-46ef-8a5a-671554f24444">
 
 ## Docker and Azure Container APP Registry
 Image Storage: The image "myfinalschedule" is stored in Azure APP Registry. It is automatically stored when the command line `az containerapp up --resource-group myfinalschedule --name myfinalschedule --ingress external --target-port 50505 --source .` is run for the second time. 
