@@ -64,12 +64,11 @@ Status badges for CI.yml
 ## App Usage
 1. Click plan your day
 2. Input the daily to-dos
-3. Click finished
+3. Click Generate Schedule
+   
+ <img width="1370" alt="截屏2023-12-09 21 11 22" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/b9ad4af6-e150-4061-b580-17fdfea78257">
+
 4. A Planned schedule will be shown
+<img width="1222" alt="截屏2023-12-09 21 12 36" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/591d5fea-9cac-4b98-a344-2c25560bbc2c">
 
 
-## Conclusion and Recommendation
-
-The visualization (in visualizations section above) demonstrates that Biology is the most popular discipline with the higest total population (men and women in total) among all selected major. This is, however, different from data included in all_ages.csv. Further research into all_ages and grad_students data have suggested other more popular discipline/major for men and women. This could be caused by the limited majors included in this dataset. Potential recommendation on expanding the sample size and range could benefit the data accuracy and provide more careful and meaningful conclusion. This could also be due to the fact that women_stem.csv is a subset of another dataset, meaning that not the complete view is being provided here. A comparison between women_stem dataset with the original full pictured dataset could be an improvement and extension of the currently approached discovery. 
-
-## Building Process
