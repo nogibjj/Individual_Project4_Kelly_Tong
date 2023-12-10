@@ -11,7 +11,7 @@ Video Demo can be found in : [individual project 4 demo video youtube]()
 This designed Flask app helps to build schedule for target consumer according to their daily tasks and to-dos. The consumer will input their daily tasks in the command line. These tasks will then be organized into a designed daily schedule that helps them organize their to-dos. 
 
 ## APP Demonstration
-APP can be found here:【ScheduleBuilder](http://myfinalschedule.kindground-9784b48c.westus2.azurecontainerapps.io)
+APP can be found here: [ScheduleBuilder](http://myfinalschedule.kindground-9784b48c.westus2.azurecontainerapps.io)
 <img width="1262" alt="截屏2023-12-09 21 01 48" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/8e27f88e-353a-44f5-a014-c0d0a5f1c063">
 
     
@@ -36,13 +36,13 @@ APP can be found here:【ScheduleBuilder](http://myfinalschedule.kindground-9784
 - ``templates`` folder includes all the templates for the app
   
 - ``static`` includes the necessary files which are downloadede
+  
+- ``Dockerfile``is provided to containerize the Flask app
 
 ## Github actions
 Status badges for CI.yml
 `CI.yml`
 [![CI](https://github.com/nogibjj/Individual_Project4_Kelly_Tong/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Individual_Project4_Kelly_Tong/actions/workflows/CI.yml)
-
-
 
 ## Preparation and Setup
 1. clone the repository
@@ -66,6 +66,7 @@ Status badges for CI.yml
 
 10. Set API_TOKEN in environment variable 
 11. Use the Flask App as demonstrated in App usage below
+12. App can be viewed in Azure Container and image can be viewed in container registry which are both in Azure Web Portal
 
 ## App Usage
 1. Click plan your day
@@ -77,4 +78,8 @@ Status badges for CI.yml
 4. A Planned schedule will be shown
 <img width="1222" alt="截屏2023-12-09 21 12 36" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/591d5fea-9cac-4b98-a344-2c25560bbc2c">
 
+## Docker and Azure Container APP Registry
+Image Storage: The image "myfinalschedule" is stored in Azure APP Registry. It is automatically stored when the command line `az containerapp up --resource-group myfinalschedule --name myfinalschedule --ingress external --target-port 50505 --source .` is run for the second time. 
+
+<img width="1256" alt="截屏2023-12-10 13 34 56" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/a18f81eb-42d7-4ed7-bee8-a17dcf994275">
 
