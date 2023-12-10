@@ -9,6 +9,10 @@ Video Demo can be found in : [individual project 4 demo video youtube]()
 
 **Building Schedule**
 This designed Flask app helps to build schedule for target consumer according to their daily tasks and to-dos. The consumer will input their daily tasks in the command line. These tasks will then be organized into a designed daily schedule that helps them organize their to-dos. 
+
+## APP Demonstration
+<img width="1262" alt="截屏2023-12-09 21 01 48" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/8e27f88e-353a-44f5-a014-c0d0a5f1c063">
+
     
 ## Important Things included are:
 - ``.devcontainer`` includes a Dockerfile and devcontainer.json.
@@ -28,71 +32,41 @@ This designed Flask app helps to build schedule for target consumer according to
 
 - ``test_main.py`` is a test file for main.py
 
-- ``setup.py`` setup the local packages for python, specify the dependencies required in the package. This executes the ETL streamline commands which can be called by a Makefile commnd. 
-
-- ``mylib`` includes ``extract.py`` ``transform_load.py`` and ``query_viz.py`` which are used to extract
-  a csv from an url, clean it and return a db file.
-
-- ``run_job.py`` is included in a makefile command ``Makefile`` and in ``CI.yml`` to perform automatic run of the databrick job when Github Action is triggered through push. 
+- ``templates`` folder includes all the templates for the app
+  
+- ``static`` includes the necessary files which are downloadede
 
 ## Github actions
 Status badges for CI.yml
 `CI.yml`
-[![CI](https://github.com/nogibjj/Individual_Project3_Kelly_Tong/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Individual_Project3_Kelly_Tong/actions/workflows/CI.yml)
+[![CI](https://github.com/nogibjj/Individual_Project4_Kelly_Tong/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Individual_Project4_Kelly_Tong/actions/workflows/CI.yml)
 
 
 
-## Preparation
-**1. Establish a Databricks Workspace:**
-    Initiate a Databricks workspace within a cloud environment, such as Azure, to leverage its data processing and analytics capabilities.
+## Preparation and Setup
+1. clone the repository
+2. modify requirements.txt file to contain the necessary packages
+3. use `pip install Flask` to install Flask on codespace
+4. login to Azure
+5. Create an account with Docker Hub and prepare a repository for storing images
+   
+<img width="1356" alt="截屏2023-12-09 21 04 05" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/8e2576b6-d887-4db1-a2c9-28d7b0f64e88">
 
-**2. GitHub Integration:**
-    Link your GitHub account with the Databricks Workspace to facilitate seamless code management and version control.
-
-    
-<img width="795" alt="Link Account Databrick" src="https://github.com/nogibjj/Individual_Project3_Kelly_Tong/assets/142815940/cf3aea9d-2b40-4f15-a564-2ccbbde29db6">
-
-    
-**3. Initialization Script Setup:**
-    In your Databricks cluster, implement a global initialization script. This script should define necessary environment variables, ensuring a consistent runtime environment.
-
-**4. Cluster Configuration for PySpark:**
-    Configure and activate a Databricks cluster that is optimized for running PySpark applications, enabling efficient processing of large-scale data with Spark and Python.
-
-**5. Repository Cloning:**
-    Directly clone your project’s repository into the Databricks workspace. This step brings your codebase into the Databricks environment for execution and further development.
-
-<img width="1182" alt="clone" src="https://github.com/nogibjj/Individual_Project3_Kelly_Tong/assets/142815940/0117bb7e-c6bb-4485-9a52-1e5805a6bf99">
+6. Create an App on Azure using App service and Web App, remember to set Publish to Docker Container and Image Source to Docker Hub
+<img width="1372" alt="截屏2023-12-09 21 06 00" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/80d1b03d-29c5-4735-a059-5b2a63722c39">
 
 
-**6. Job Automation:**
-    Create and configure a Databricks job. This job will automate the execution of your data pipeline, streamlining the process and ensuring regular, reliable operation.
+7. Add a configuration of Website_Port = 5000 in Configuration under Setting
+   <img width="613" alt="截屏2023-12-09 21 07 47" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/6df8092d-2e85-4a88-bdc9-e381f7eb6768">
 
-## Visualizations
+8. Use the Flask App as demonstrated in App usage below
 
-![visual](https://github.com/nogibjj/Individual_Project3_Kelly_Tong/assets/142815940/cef9a6a0-05a1-44c6-8fbf-790954483f22)
+## App Usage
+1. Click plan your day
+2. Input the daily to-dos
+3. Click finished
+4. A Planned schedule will be shown
 
-## Data Source, Data Sink (Delta Lake), and ETL Pipeline
-
-`Extraction` : Data Source (Individual_Project3_Kelly_Tong/mylib/extract.py) 
-
-`Transform_load`: Data Sink (Delta Lake) (Individual_Project3_Kelly_Tong/mylib/transform_load.py) 
-
-`Query_viz`: perform query and generate visualization task (Individual_Project3_Kelly_Tong/mylib/query_viz.py) 
-
-Job pipeline in Databricks Workflows: 
-
-<img width="765" alt="Individual3 Job Run" src="https://github.com/nogibjj/Individual_Project3_Kelly_Tong/assets/142815940/4375882b-a94e-4e1c-ba57-808f4087f45e">
-
-## Data Source Storing in DBFS
-
-DBFS: 
-
-<img width="1159" alt="DBFS" src="https://github.com/nogibjj/Individual_Project3_Kelly_Tong/assets/142815940/348dc611-d298-4361-a73b-ebf5d1ecae63">
-
-Catalog: 
-
-<img width="1202" alt="catalog data source" src="https://github.com/nogibjj/Individual_Project3_Kelly_Tong/assets/142815940/a138d5db-3ac3-45cb-aab1-730e820b522e">
 
 ## Conclusion and Recommendation
 
