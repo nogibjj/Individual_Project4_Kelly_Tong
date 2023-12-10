@@ -2,6 +2,9 @@
 
 This repository is for IDS706 Individual Project 4: Auto Scaling Flask App Using Any Serverless Platform
 
+## Purpose
+The purpose of this repository is to demonstrate the process for creating a Flask app via Azure web app service. The Flask app has its self designed functionality. In this case, it is designed to build a daily schedule for an incoming audience. Input the daily to-dos and the schedule builder will build your schedule based on a daily time schedule. Docker is used in this repository to contain image. 
+
 ## Video Demo
 Video Demo can be found in : [individual project 4 demo video youtube]()
 
