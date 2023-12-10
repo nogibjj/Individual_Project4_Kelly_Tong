@@ -11,6 +11,7 @@ Video Demo can be found in : [individual project 4 demo video youtube]()
 This designed Flask app helps to build schedule for target consumer according to their daily tasks and to-dos. The consumer will input their daily tasks in the command line. These tasks will then be organized into a designed daily schedule that helps them organize their to-dos. 
 
 ## APP Demonstration
+APP can be found here:【ScheduleBuilder](http://myfinalschedule.kindground-9784b48c.westus2.azurecontainerapps.io)
 <img width="1262" alt="截屏2023-12-09 21 01 48" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/8e27f88e-353a-44f5-a014-c0d0a5f1c063">
 
     
@@ -47,19 +48,24 @@ Status badges for CI.yml
 1. clone the repository
 2. modify requirements.txt file to contain the necessary packages
 3. use `pip install Flask` to install Flask on codespace
-4. login to Azure
-5. Create an account with Docker Hub and prepare a repository for storing images
+4. use `brew update && brew install azure-cli` to install azure-cli locally
+5. login to Azure locally using "az login"
+6. Build an image locally using `docker build --tag myfinalschedule .`
+<img width="882" alt="截屏2023-12-10 13 24 45" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/69b0a2ad-5235-42a9-acf0-ce7ab18baaf5">
    
-<img width="1356" alt="截屏2023-12-09 21 04 05" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/8e2576b6-d887-4db1-a2c9-28d7b0f64e88">
+7. Build a container locally using `docker run --detach --publish 5000:50505 myfinalschedule`
+   
+<img width="813" alt="截屏2023-12-10 13 23 46" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/3cefbe70-78f2-411a-94c5-f628336ad08b">
 
-6. Create an App on Azure using App service and Web App, remember to set Publish to Docker Container and Image Source to Docker Hub
-<img width="1372" alt="截屏2023-12-09 21 06 00" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/80d1b03d-29c5-4735-a059-5b2a63722c39">
+8. Create an App on Azure using `az containerapp up --resource-group myfinalschedule --name myfinalschedule --ingress external --target-port 50505 --source .` This will first create the resource group, run the same line again to create the flask app.
+   
+<img width="1141" alt="截屏2023-12-10 13 27 10" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/8e25f88f-a7e4-4a2c-a759-d0ae1fca894f">
+
+<img width="1395" alt="myfinalschedule" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/1ecf7aae-4e4b-4b94-a0b5-1dd72205dc6e">
 
 
-7. Add a configuration of Website_Port = 5000 in Configuration under Setting
-   <img width="613" alt="截屏2023-12-09 21 07 47" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/6df8092d-2e85-4a88-bdc9-e381f7eb6768">
-
-8. Use the Flask App as demonstrated in App usage below
+10. Set API_TOKEN in environment variable 
+11. Use the Flask App as demonstrated in App usage below
 
 ## App Usage
 1. Click plan your day
