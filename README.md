@@ -2,9 +2,6 @@
 
 This repository is for IDS706 Individual Project 4: Auto Scaling Flask App Using Any Serverless Platform
 
-## APP
-Please access the app Schedule Builder through: [schedule builder](http://127.0.0.1:5000/schedule)
-http://127.0.0.1:5000
 ## Video Demo
 Video Demo can be found in : [individual project 4 demo video youtube]()
 
