@@ -20,7 +20,8 @@ def test_html_files_exist(directory="templates/"):
 
 def test_openai_api_call():
     """Test the OpenAI API call for generating a schedule."""
-    test_tasks = "Task 1: Code review\nTask 2: Team meeting\nTask 3: Write documentation"
+    test_tasks = 
+    "Task 1: Code review\nTask 2: Team meeting\nTask 3: Write documentation"
     schedule = get_daily_schedule(test_tasks)
     assert schedule is not None and len(schedule) > 0
 
