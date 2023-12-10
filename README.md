@@ -64,10 +64,10 @@ Status badges for CI.yml
 ## App Usage
 1. Click plan your day
 2. Input the daily to-dos
-3. Click Generate Schedule
    
- <img width="1370" alt="截屏2023-12-09 21 11 22" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/b9ad4af6-e150-4061-b580-17fdfea78257">
+<img width="1400" alt="截屏2023-12-09 21 12 28" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/94ac597d-ac44-4cfc-bf30-ea24928429b0">
 
+3. Click Generate Schedule
 4. A Planned schedule will be shown
 <img width="1222" alt="截屏2023-12-09 21 12 36" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/591d5fea-9cac-4b98-a344-2c25560bbc2c">
 
