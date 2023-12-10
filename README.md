@@ -8,8 +8,10 @@ Please access the app Schedule Builder through: [schedule builder](http://127.0.
 ## Video Demo
 Video Demo can be found in : [individual project 4 demo video youtube]()
 
-## Purpose 
+## Key Functions
 
+**Building Schedule**
+This designed Flask app helps to build schedule for target consumer according to their daily tasks and to-dos. The consumer will input their daily tasks in the command line. These tasks will then be organized into a designed daily schedule that helps them organize their to-dos. 
     
 ## Important Things included are:
 - ``.devcontainer`` includes a Dockerfile and devcontainer.json.
@@ -41,10 +43,7 @@ Status badges for CI.yml
 `CI.yml`
 [![CI](https://github.com/nogibjj/Individual_Project3_Kelly_Tong/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Individual_Project3_Kelly_Tong/actions/workflows/CI.yml)
 
-## Key Functions
 
-**Building Schedule**
-This designed Flask app helps to build schedule for target consumer according to their daily tasks and to-dos. The consumer will input their daily tasks in the command line. These tasks will then be organized into a designed daily schedule that helps them organize their to-dos. 
 
 ## Preparation
 **1. Establish a Databricks Workspace:**
